@@ -6,7 +6,7 @@ from pizza.quitar_ingrediente import quitar_ingrediente
 from pizza.elegir_salsa import elegir_salsa
 from pizza.agregar_ingrediente import agregar_ingrediente
 from pizza.elegir_salsa import elegir_salsa
-
+from pizza.tiempo_preparacion import tiempo_preparacion
 
 
 def main():
@@ -35,6 +35,12 @@ def main():
 
         elif opcion == "5":
             print(mi_pizza)
+
+        elif opcion == "6":
+           t = tiempo_preparacion(mi_pizza)
+           print(f"El tiempo que demorará la pizza son {t} minutos ")
+
+
 
         else:
             print("salir")

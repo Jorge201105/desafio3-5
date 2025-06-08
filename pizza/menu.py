@@ -9,7 +9,9 @@ def menu():
 3.- Elegir ingrediente
 4.- Quitar ingredinete
 5.- Mostrar pizza
-6.- Salir
+6.- Estimar tiempo de prpeparación
+7.- Conformar pedido y salir
+8.- Salir
 
     """)
     
