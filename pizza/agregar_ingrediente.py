@@ -12,13 +12,14 @@ def agregar_ingrediente(mi_pizza):
         8: "Tocino",
         9: "Queso"
     }
-    print("las opciones son las siguinetes: ")
+    print("las opciones son las siguientes: ")
 
     for k,v in ingredientes.items():
         print(f"{k}.-{v}")
 
     opcion = int(input(" : "))
-
+    
     if opcion in ingredientes:
         ingrediente = ingredientes[opcion]
         mi_pizza["ingredientes"].append(ingrediente)
+        print(ingredientes)
