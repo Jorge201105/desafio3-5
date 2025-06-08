@@ -1,23 +1,32 @@
 
 
 
-def seleccionar_masa(pizza):
-    masa = ["masa_tradicional","masa_delgada", "masa_borde_queso"]
+def seleccionar_masa(mi_pizza):
+    masa = ["1","2", "3"]
     eleccion =input("""
 selecciona la masa:
 1.- Masa Traducional
 2.- Masa Delgada
 3.- Masa Borde queso
 """)
-    test = masa[0]
-    print(masa,eleccion,test)
+    
+    
     if eleccion == masa[0]:
-        pizza["masa"] = "masa_tradicional"
-        print(f"masa de {pizza} ")
+        mi_pizza["masa"] = "masa_tradicional"
+        print(f"masa de {mi_pizza["masa"]} agregada correctamente")
 
     elif eleccion == masa[1]:
-        pizza["masa"] ="masa_delgada"
-        
+        mi_pizza["masa"] ="masa_delgada"
+        print(f"masa de {mi_pizza["masa"]} agregada correctamente")
+
+    elif eleccion == masa[2]:
+        mi_pizza["masa"] ="masa_borde_queso"
+        print(f"masa de {mi_pizza["masa"]} agregada correctamente")
+
+    else:
+        print("opción no valida")
+
+    return mi_pizza
           
 
 

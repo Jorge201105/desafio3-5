@@ -2,13 +2,13 @@
 
 
 def crear_pizza():
-    pizza1={
+    mi_pizza = {
         "masa":"",
         "salsa":"",
         "ingrediente":[]
-
+        
 
     }
 
     
-    return pizza1
+    return mi_pizza
