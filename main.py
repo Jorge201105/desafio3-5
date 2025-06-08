@@ -7,14 +7,14 @@ from pizza.elegir_salsa import elegir_salsa
 from pizza.agregar_ingrediente import agregar_ingrediente
 from pizza.elegir_salsa import elegir_salsa
 from pizza.tiempo_preparacion import tiempo_preparacion
-
+from pizza.confirmar_pedido import confirmacion
 
 def main():
     mi_pizza=crear_pizza()
 
     while True:
         menu()
-        opcion = input("ingrese su opción")
+        opcion = input("ingrese su opción : ")
        
         if opcion =="1":
             seleccionar_masa(mi_pizza)
@@ -40,10 +40,14 @@ def main():
            t = tiempo_preparacion(mi_pizza)
            print(f"El tiempo que demorará la pizza son {t} minutos ")
 
+        elif opcion == "7":
+           print(confirmacion())
+
 
 
         else:
             print("salir")
+            exit()
 
 
 
